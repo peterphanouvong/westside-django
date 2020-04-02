@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+
+<div class="container">
+    <div class="hero my-3">
+        <div class="hero-title">
+            <h2 class="title-2">ABOUT US</h2>
+            <p>Westside is a Volleyball Club which caters to volleyball players of ALL ages who want to train and play together. We are always looking out for each other, with everyone helping out how they can. </p>
+            <p>We are about FAMILY.</p>
+        </div>
+        <div class="hero-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+    </div>
+    <div class="our-purpose">
+        <h2>OUR PURPOSE 🏐</h2>
+        <p>Westside is here to provide a home for all volleyball players.</p>
+        <p>Whether you want to learn, play or compete, Westside can cater to you.</p>
+        <br>
+        <div class="testimonials">
+            <div>
+                <div class="testimonial">
+                    <div class="testimonial-face">
+                        <img src="{% static 'website/img/temp-img.png' %}" alt=""/>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-words">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minus?"</p>   
+                        <p class="testimonial-author"> - John Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial">
+                    <div class="testimonial-face">
+                        <img src="{% static 'website/img/temp-img.png' %}" alt=""/>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-words">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minus?"</p>   
+                        <p class="testimonial-author"> - John Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial">
+                    <div class="testimonial-face">
+                        <img src="{% static 'website/img/temp-img.png' %}" alt=""/>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-words">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minus?"</p>   
+                        <p class="testimonial-author"> - John Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="testimonial">
+                    <div class="testimonial-face">
+                        <img src="{% static 'website/img/temp-img.png' %}" alt=""/>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-words">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minus?"</p>   
+                        <p class="testimonial-author"> - John Doe</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="some-history section">
+        <h2>SOME HISTORY</h2>
+        <p>Westside has some great coaches and alumni who have competed in high level volleyball around the world. But it all had to start somewhere...</p>
+        <br/>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores accusamus fugit sunt officia. Eveniet enim tenetur, quasi facilis quia magnam, quo hic itaque impedit dolores nemo harum cum consectetur quibusdam ipsa laudantium vitae illum quae facere laboriosam, accusamus beatae sunt necessitatibus labore! Animi vel quidem reiciendis! Velit tenetur accusamus similique? Quis dolore accusamus inventore deleniti eum aperiam rerum reprehenderit quod, ducimus impedit? Eius ipsum, ipsam quidem, suscipit in omnis praesentium vero dignissimos laboriosam nam explicabo.
+        </p>
+        <br/>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eveniet illo eos temporibus expedita provident quia voluptatibus, neque unde ullam quod velit consequuntur esse aliquid harum aperiam sed est omnis commodi molestias enim? Corrupti, sunt, eos quo voluptas eum repudiandae suscipit autem a unde odit architecto, quaerat explicabo. Magnam, optio.
+        </p>
+        <br/>
+        <img src="{% static 'website/img/temp-img.png' %}" alt="">
+    </div>
+    <div class="today section">
+        <h2>WHERE WE ARE TODAY</h2>
+        <p>All of this history has led us to where we are today. Right now Westside is looking to build upon it's strong foundation and provide for today's generation of vollyeball players...</p>
+        <br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa temporibus deserunt distinctio tempora sit molestiae, exercitationem eligendi, molestias ducimus, nobis rerum maxime est aut. Quas odit cupiditate aut sit voluptatum doloribus reiciendis voluptate fugit earum iste recusandae neque tenetur, facere quae, officia repellendus. Ducimus, quidem! Accusantium, iusto itaque. Neque exercitationem iusto cum. Modi aspernatur, quibusdam veritatis ratione voluptatum maxime voluptates molestiae tenetur. Nulla vero ratione delectus beatae quo illo aliquam eaque, maiores magni nostrum nemo quibusdam ducimus. Modi, laborum totam. Id dolore numquam excepturi quaerat nihil. Quidem impedit quaerat eaque consectetur unde minus deleniti nam quae ut laudantium, dolore accusantium!</p>
+    </div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'website/slick/slick.min.js' %}"></script>
+<script>
+    $('.testimonials').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+</script>
+
+{% endblock %}

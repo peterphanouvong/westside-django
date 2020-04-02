@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+
+<div class="container">
+    <div class="hero my-3">
+        <div class="hero-title">
+            <h2 class="title-2">MATCHES</h2>
+            <p>You can check out our upcoming matches and our previous match results!</p>
+            <p>We out here 🤙</p>
+        </div>
+        <div class="hero-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+    </div>
+</div>
+<div class="section upcoming">
+    <h2>UPCOMING</h2>
+    <br/>
+    <div class="matches">
+        <div>
+            <div class="upcoming-match">
+                <h4>WSV v Housecats</h3>
+                <ul>
+                    <li>Division: Men's Honours</li>
+                    <li>Date: 30/3</li>
+                    <li>Time: 12pm</li>
+                    <li>Place: Geniva</li>
+                    <li>Last Meeting: 3-2 (Westside)</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="upcoming-match">
+                <h4>WSV v Housecats</h3>
+                <ul>
+                    <li>Division: Men's Honours</li>
+                    <li>Date: 30/3</li>
+                    <li>Time: 12pm</li>
+                    <li>Place: Geniva</li>
+                    <li>Last Meeting: 3-2 (Westside)</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="upcoming-match">
+                <h4>WSV v Housecats</h3>
+                <ul>
+                    <li>Division: Men's Honours</li>
+                    <li>Date: 30/3</li>
+                    <li>Time: 12pm</li>
+                    <li>Place: Geniva</li>
+                    <li>Last Meeting: 3-2 (Westside)</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="upcoming-match">
+                <h4>WSV v Housecats</h3>
+                <ul>
+                    <li>Division: Men's Honours</li>
+                    <li>Date: 30/3</li>
+                    <li>Time: 12pm</li>
+                    <li>Place: Geniva</li>
+                    <li>Last Meeting: 3-2 (Westside)</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="upcoming-match">
+                <h4>WSV v Housecats</h3>
+                <ul>
+                    <li>Division: Men's Honours</li>
+                    <li>Date: 30/3</li>
+                    <li>Time: 12pm</li>
+                    <li>Place: Geniva</li>
+                    <li>Last Meeting: 3-2 (Westside)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section past-results">
+        <h2>PAST RESULTS 🏅</h2>
+
+        <table class="results-table uk-table uk-table-divider">
+            <thead>
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Table Footer</td>
+                    <td>Table Footer</td>
+                    <td>Table Footer</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'website/slick/slick.min.js' %}"></script>
+<script>
+    $('.matches').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+</script>
+
+{% endblock %}

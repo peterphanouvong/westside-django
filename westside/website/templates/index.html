@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+<div class="container">
+    <div class="hero my-3">
+        <div class="hero-title">
+            <h3 class="title-1">GOOD PASS</span>
+            <h2 class="title-2">GOOD SET</span>
+            <h1 class="title-3">GOODBYE.</span>
+        </div>
+        <div class="hero-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+    </div>
+    <div class="services-block">
+        <div class="service">
+            <div class="service-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+            <div class="service-content">
+                <h4>Juniors &#128518;</h4>
+                <p>The Juniors program at Westside is all about fostering young talent under the guidance of our veteran players and coaches. We give the youth a safe and social way to spend their time with volleyball.</p>
+            </div>
+            <a href="" class="btn btn-services">Learn More</a>
+            <a href="" class="btn btn-services">Join Us</a>
+        </div>
+        <div class="service">
+            <div class="service-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+            <div class="service-content">
+                <h4>Mens &#129313;</h4>
+                <p>Our Mens program at Westside caters to the players (newbies or seasoned veterans) who are 18 years of age and over. Show up for trainings and play in competitions with us!</p>
+            </div>
+            <a href="" class="btn btn-services">Learn More</a>
+            <a href="" class="btn btn-services">Join Us</a>
+        </div>
+        <div class="service">
+            <div class="service-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+            <div class="service-content">
+                <h4>Womens &#128526;</h4>
+                <p>Fun, positive, uplifting family environment, pushing each other to 100%... Our Womens program at Westside is open to all women looking to train, play and compete with our girls!</p>
+            </div>
+            <a href="" class="btn btn-services">Learn More</a>
+            <a href="" class="btn btn-services">Join Us</a>
+        </div>
+        <div class="service">
+            <div class="service-img"><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+            <div class="service-content">
+                <h4>Socials &#129325;</h4>
+                <p>If you're not into training or competitions you can still hang out with the gang at our Socials nights.</p>
+            </div>
+            <a href="" class="btn btn-services">Learn More</a>
+            <a href="" class="btn btn-services">Join Us</a>
+        </div>
+    </div>
+</div>
+    <div class="who dark-blue-bg">
+        <div class="container">
+            <div class="who-title"><h2>WHO IS WESTSIDE?</h2></div>
+            <div class="who-content">
+                <p>Westside is a large and diverse group with people from many backgrounds. Most of us are from the Greater Western Sydney region, especially from Macarthur and South Western Sydney. Our diversity and multiculturalism is an aspect of the club which we take pride in.</p>
+                <br>
+                <p>Our players and coaches have loads of experience playing volleyball on state and national teams in Australia, and even competing on an International level. Joining the family, means being able to connect with people who have a long history with volleyball and knowledge of the game acquired over years of experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="where card light-blue-bg">
+        <h2>WHERE TO FIND US 📍</h2>
+        <p>
+            You can find us playing and training all around the Greater Western Sydney Region:
+        </p>
+        <div class="where-content">
+            
+            <div class="where-info">
+                
+                <ul>
+                    <li>
+                        <h3>Fairfield</h3>
+                        Socials @ Fairfield Youth Centre : Thursdays 7.30pm
+                    </li>
+                    <li>
+                        <h3>Cabramatta</h3> 
+                        Junior Training @ Cabramatta PCYC : Saturday Mornings 
+                        <br><br> 
+                        Womens Training @ Cabramatta PCYC : Saturday Mornings 
+                    </li>
+                    <li>
+                        <h3>Minto</h3>
+                        Mens Training @ Minto Indoor Stadium : Tuesday Nights
+                    </li>
+                </ul>
+            </div>
+            <div class="where-pics">
+                <div><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+                <div><img src="{% static 'website/img/temp-img.png' %}"alt=""></div>
+                <div><img src="{% static 'website/img/temp-img.png' %}" alt=""></div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="social-media">
+        <div class="social-media-title"><h2>OUR FEED </h2></div>
+        <div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    </div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'website/slick/slick.min.js' %}"></script>
+<script>
+    $(document).ready(function(){
+        $('.where-pics').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    });
+</script>
+<script type="text/javascript">
+    /* curator-feed-default-layout */
+    (function(){
+    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+    i.src = "https://cdn.curator.io/published/7baa50e5-a159-41d2-b8a6-64d641c3ba58.js";
+    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+    })();
+</script>
+
+{% endblock %}
+
+
+
+<!-- Place <div> tag where you want the feed to appear -->
+    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
